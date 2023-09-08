@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farmer's Market</title>
+  <link rel="stylesheet" href="fstyle.css">
+</head>
+<body>
+  <h1>Farmer's Market - Sell Your Vegetables and Fruits</h1>
+    <!-- Container to display the username -->
+  <div id="user-info-container"></div>
+  <div id="item-container" class="card-container">
+    <!-- The items will be dynamically added here -->
+  </div>
+  <div id="add-item-form">
+    <h2>Add New Item</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <label for="price">Price:</label>
+    <input type="number" id="price" step="0.01" required>
+    <label for="image">Image:</label>
+    <input type="file" id="image" accept="image/jpeg, image/png" required>
+    <!-- <label for="seller">Seller:</label>
+    <input type="text" id="seller" required> -->
+    <label for="quantity">Quantity(kg):</label>
+    <input type="number" id="quantity" required>
+    <button id="add-item-btn">Add Item</button>
+  </div>
+
+  <script src="fscript.js"></script>
+</body>
+</html>
